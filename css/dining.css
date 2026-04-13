@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #fafafa;
+}
+
+.site-header {
+  background: #1e1b30;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header .brand {
+  display: flex;
+  align-items: center;
+}
+
+.site-header .logo {
+	width: 140px;
+	height: 130px;
+}
+
+.main-nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #d97706; /* golden accent */
+}
+
+.hero {
+  background: url("../images/dining-hero.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 1rem;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.dining-page {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.dining h2 {
+  text-align: center;
+  color: #1e1b30;
+  margin-bottom: 2rem;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+	color: #333;
+	margin: 2rem 0 1.5rem;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.menu-item h3 {
+  color: #222;
+  margin: 0.5rem 0;
+}
+
+.menu-item p {
+  margin: 0.4rem 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #1e1b30;
+  margin-top: 0.5rem;
+}
+
+.services {
+  margin-top: 4rem;
+}
+
+.services h2 {
+  text-align: center;
+  color: #1e1b30;
+  margin-bottom: 2rem;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+	color: #333;
+	margin: 2rem 0 1.5rem;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 180px;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.service-card p {
+  font-size:15px;
+  color: #20281d;
+  margin-bottom: 2rem;
+}
