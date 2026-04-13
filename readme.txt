@@ -1,4 +1,4 @@
-Sunrise Hotel — Simple HTML5 Website
+Sunrise Hotel — Simple Static HTML5 Website for my first sem web development module
 Files included:
 - index.html (Home)
 - rooms.html (Rooms & Facilities)
